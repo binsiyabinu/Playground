@@ -1,0 +1,43 @@
+/*Write a java program to find the sum array and also find the sum value is positive or negative
+Input format:
+
+
+
+The input consist of Integer
+
+
+
+
+
+Output format:
+
+
+
+The output consists of Integer and String
+
+Positive number/Negative number*/
+
+
+/*******************************************************************************************************************/
+import java.util.Scanner;
+class Main{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int s1=sc.nextInt();
+		int arr[]=new int[30];
+		for(int i=0;i<s1;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		int sum=0;
+		for(int i=0;i<s1;i++)
+		{
+		sum=sum+arr[i];
+		}
+		if(sum>0)
+			System.out.println(sum+"\nPositive number");
+		else
+			System.out.println(sum+"\nNegative number");
+	}
+}
